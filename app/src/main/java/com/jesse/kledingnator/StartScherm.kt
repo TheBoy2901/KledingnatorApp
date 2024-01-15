@@ -39,7 +39,7 @@ class StartScherm : Fragment() {
         val view = inflater.inflate(R.layout.fragment_start_scherm, container, false)
 
         view.findViewById<Button>(R.id.btn_start).setOnClickListener {
-            Navigation.findNavController(view).navigate(R.id.keuzeKledingstuk)
+            Navigation.findNavController(view).navigate(R.id.action_startScherm_to_keuzeKledingstuk)
         }
         return view
     }
