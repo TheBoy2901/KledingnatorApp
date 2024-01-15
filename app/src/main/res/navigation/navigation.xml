@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/startScherm">
+
+    <fragment
+        android:id="@+id/startScherm"
+        android:name="com.jesse.kledingnator.StartScherm"
+        android:label="fragment_start_scherm"
+        tools:layout="@layout/fragment_start_scherm" >
+        <action
+            android:id="@+id/action_startScherm_to_keuzeKledingstuk"
+            app:destination="@id/keuzeKledingstuk" />
+    </fragment>
+    <fragment
+        android:id="@+id/keuzeKledingstuk"
+        android:name="com.jesse.kledingnator.KeuzeKledingstuk"
+        android:label="fragment_keuze_kledingstuk"
+        tools:layout="@layout/fragment_keuze_kledingstuk" >
+        <action
+            android:id="@+id/action_keuzeKledingstuk_to_vraag1"
+            app:destination="@id/Vraag1" />
+    </fragment>
+    <fragment
+        android:id="@+id/Vraag1"
+        android:name="com.jesse.kledingnator.Vraag1"
+        android:label="fragment_vraag1"
+        tools:layout="@layout/fragment_vraag1" >
+        <action
+            android:id="@+id/action_Vraag1_to_Vraag2"
+            app:destination="@id/Vraag2" />
+    </fragment>
+    <fragment
+        android:id="@+id/Vraag2"
+        android:name="com.jesse.kledingnator.Vraag2"
+        android:label="fragment_vraag2"
+        tools:layout="@layout/fragment_vraag2" />
+</navigation>
