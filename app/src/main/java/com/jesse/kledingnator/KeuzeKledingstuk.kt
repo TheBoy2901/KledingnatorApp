@@ -39,18 +39,15 @@ class KeuzeKledingstuk : Fragment() {
         val view = inflater.inflate(R.layout.fragment_keuze_kledingstuk, container, false)
 
         view.findViewById<Button>(R.id.btn_keuze_broek).setOnClickListener {
-            val kledingstuk = ¨Broek¨
-            Navigation.findNavController(view).navigate(R.id.action_keuzeKledingstuk_to_vraag1, kledingstuk)
+            Navigation.findNavController(view).navigate(R.id.action_keuzeKledingstuk_to_vraag1, )
         }
 
         view.findViewById<Button>(R.id.btn_keuze_sokken).setOnClickListener {
-            val kledingstuk = ¨Sokken¨
-            Navigation.findNavController(view).navigate(R.id.action_keuzeKledingstuk_to_vraag1, kledingstuk)
+            Navigation.findNavController(view).navigate(R.id.action_keuzeKledingstuk_to_vraag1, )
         }
 
         view.findViewById<Button>(R.id.btn_keuze_vest).setOnClickListener {
-            val kledingstuk = ¨Vest¨
-            Navigation.findNavController(view).navigate(R.id.action_keuzeKledingstuk_to_vraag1, kledingstuk)
+            Navigation.findNavController(view).navigate(R.id.action_keuzeKledingstuk_to_vraag1, )
         }
         return view
     }
