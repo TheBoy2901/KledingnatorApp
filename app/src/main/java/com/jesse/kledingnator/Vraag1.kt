@@ -39,9 +39,9 @@ class Vraag1 : Fragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_vraag1, container, false)
 
-        var antwoord = arguments.getString("antwoord")
+        var antwoord_kledingstuk_ant = arguments?.getString("kledingstuk_ant")
 
-        view.findViewById<TextView>(R.id.txt_vraag1_test).text = arguments?.getString("antwoord")
+        view.findViewById<TextView>(R.id.txt_vraag1_test).text = antwoord_kledingstuk_ant
 
         view.findViewById<Button>(R.id.btn_Vraag1_ja).setOnClickListener {
             Navigation.findNavController(view).navigate(R.id.action_Vraag1_to_Vraag2)
