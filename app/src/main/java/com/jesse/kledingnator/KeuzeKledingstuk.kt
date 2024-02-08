@@ -41,20 +41,20 @@ class KeuzeKledingstuk : Fragment() {
 
         view.findViewById<Button>(R.id.btn_keuze_broek).setOnClickListener {
             val kledingstuk = "Broek"
-            val antwoordKledingstuk = bundleOf("kledingstuk_ant" to kledingstuk)
-            Navigation.findNavController(view).navigate(R.id.action_keuzeKledingstuk_to_vraag1, antwoordKledingstuk)
+            val Antwoorden = bundleOf("kledingstuk_ant" to kledingstuk)
+            Navigation.findNavController(view).navigate(R.id.action_keuzeKledingstuk_to_vraag1, Antwoorden)
         }
 
         view.findViewById<Button>(R.id.btn_keuze_sokken).setOnClickListener {
             val kledingstuk = "Sokken"
-            val antwoordKledingstuk = bundleOf("kledingstuk_ant" to kledingstuk)
-            Navigation.findNavController(view).navigate(R.id.action_keuzeKledingstuk_to_vraag1, antwoordKledingstuk)
+            val Antwoorden = bundleOf("kledingstuk_ant" to kledingstuk)
+            Navigation.findNavController(view).navigate(R.id.action_keuzeKledingstuk_to_vraag1, Antwoorden)
         }
 
         view.findViewById<Button>(R.id.btn_keuze_vest).setOnClickListener {
             val kledingstuk = "Vest"
-            val antwoordKledingstuk = bundleOf("kledingstuk_ant" to kledingstuk)
-            Navigation.findNavController(view).navigate(R.id.action_keuzeKledingstuk_to_vraag1, antwoordKledingstuk)
+            val Antwoorden = bundleOf("kledingstuk_ant" to kledingstuk)
+            Navigation.findNavController(view).navigate(R.id.action_keuzeKledingstuk_to_vraag1, Antwoorden)
         }
         return view
     }

@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
+import androidx.core.os.bundleOf
 import androidx.navigation.Navigation
 
 // TODO: Rename parameter arguments, choose names that match
@@ -39,21 +40,27 @@ class Vraag1 : Fragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_vraag1, container, false)
 
-        var antwoord_kledingstuk_ant = arguments?.getString("kledingstuk_ant")
+        var kledingstuk_ant = arguments?.getString("kledingstuk_ant")
 
-        view.findViewById<TextView>(R.id.txt_vraag1_test).text = antwoord_kledingstuk_ant
+        view.findViewById<TextView>(R.id.txt_vraag1_test).text = kledingstuk_ant
 
         view.findViewById<Button>(R.id.btn_Vraag1_ja).setOnClickListener {
-            Navigation.findNavController(view).navigate(R.id.action_Vraag1_to_Vraag2)
+            val Vraag1_ant = "Ja"
+            val Antwoorden = bundleOf("kledingstuk_ant" to kledingstuk_ant, "Vraag1_ant" to Vraag1_ant)
+            Navigation.findNavController(view).navigate(R.id.action_Vraag1_to_Vraag2, Antwoorden)
         }
 
         view.findViewById<Button>(R.id.btn_Vraag1_WeetIkNiet).setOnClickListener {
-            Navigation.findNavController(view).navigate(R.id.action_Vraag1_to_Vraag2)
+            val Vraag1_ant = "WeetIkNiet"
+            val Antwoorden = bundleOf("kledingstuk_ant" to kledingstuk_ant, "Vraag1_ant" to Vraag1_ant)
+            Navigation.findNavController(view).navigate(R.id.action_Vraag1_to_Vraag2, Antwoorden)
         }
 
         view.findViewById<Button>(R.id.btn_Vraag1_nee).setOnClickListener {
-            Navigation.findNavController(view).navigate(R.id.action_Vraag1_to_Vraag2)
-        }
+            val Vraag1_ant = "Nee"
+            val Antwoorden = bundleOf("kledingstuk_ant" to kledingstuk_ant, "Vraag1_ant" to Vraag1_ant)
+            Navigation.findNavController(view).navigate(R.id.action_Vraag1_to_Vraag2, Antwoorden)
+       }
         return view
     }
 }
