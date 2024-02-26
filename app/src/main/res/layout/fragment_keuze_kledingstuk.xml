@@ -22,11 +22,12 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="503dp"
-        android:layout_height="253dp"
+        android:layout_width="877dp"
+        android:layout_height="316dp"
         android:src="@drawable/achtkn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.42"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
