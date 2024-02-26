@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import org.w3c.dom.Text
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -35,9 +36,12 @@ class Vraag2 : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_vraag2, container, false)
-
+        var view = inflater.inflate(R.layout.fragment_vraag2, container, false)
         var kledingstuk_ant = arguments?.getString("kledingstuk_ant")
+        var Vraag1_ant = arguments?.getString("Vraag1_ant")
+
         view.findViewById<TextView>(R.id.txt_keuze_kledingstuk).text = kledingstuk_ant
+        view.findViewById<TextView>(R.id.txt_vraag1_ant).text = Vraag1_ant
+        return view
     }
 }
