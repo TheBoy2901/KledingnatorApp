@@ -32,7 +32,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
-        android:id="@+id/btn_Vraag1_ja"
+        android:id="@+id/btn_donkere"
         android:layout_width="193dp"
         android:layout_height="53dp"
         android:backgroundTint="#6DC0E5"
@@ -46,7 +46,7 @@
         app:layout_constraintVertical_bias="0.405" />
 
     <Button
-        android:id="@+id/btn_Vraag1_WeetIkNiet"
+        android:id="@+id/btn_lichte"
         android:layout_width="193dp"
         android:layout_height="53dp"
         android:backgroundTint="#6DC0E5"

@@ -38,11 +38,11 @@ class Vraag1 : Fragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_vraag1, container, false)
 
-        view.findViewById<Button>(R.id.btn_Vraag1_ja).setOnClickListener {
+        view.findViewById<Button>(R.id.btn_donkere).setOnClickListener {
             Navigation.findNavController(view).navigate(R.id.action_Vraag1_to_Vraag2)
         }
 
-        view.findViewById<Button>(R.id.btn_Vraag1_WeetIkNiet).setOnClickListener {
+        view.findViewById<Button>(R.id.btn_lichte).setOnClickListener {
             Navigation.findNavController(view).navigate(R.id.action_Vraag1_to_Vraag2)
         }
 
