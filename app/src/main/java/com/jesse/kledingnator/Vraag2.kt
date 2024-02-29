@@ -31,15 +31,15 @@ override fun onCreateView(
     // Inflate the layout for this fragment
     val view = inflater.inflate(R.layout.fragment_vraag2, container, false)
 
-    view.findViewById<Button>(R.id.btn_Vraag2_man).setOnClickListener {
+    view.findViewById<Button>(R.id.btn_voorkant).setOnClickListener {
         Navigation.findNavController(view).navigate(R.id.action_Vraag2_to_vraag3)
     }
 
-    view.findViewById<Button>(R.id.btn_Vraag2_vrouw).setOnClickListener {
+    view.findViewById<Button>(R.id.btn_achterkant).setOnClickListener {
         Navigation.findNavController(view).navigate(R.id.action_Vraag2_to_vraag3)
     }
 
-    view.findViewById<Button>(R.id.btn_Vraag2_geen).setOnClickListener {
+    view.findViewById<Button>(R.id.btn_geenprint).setOnClickListener {
         Navigation.findNavController(view).navigate(R.id.action_Vraag2_to_vraag3)
     }
     return view

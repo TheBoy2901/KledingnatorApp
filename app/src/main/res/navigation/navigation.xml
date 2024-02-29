@@ -54,6 +54,11 @@
             app:destination="@id/vraag4" />
     </fragment>
     <fragment
+        android:id="@+id/instellingen"
+        android:name="com.jesse.kledingnator.instellingen"
+        android:label="fragment_instellingen"
+        tools:layout="@layout/fragment_instellingen" />
+    <fragment
         android:id="@+id/vraag4"
         android:name="com.jesse.kledingnator.Vraag4"
         android:label="fragment_vraag4"
@@ -67,9 +72,4 @@
         android:name="com.jesse.kledingnator.Vraag5"
         android:label="fragment_vraag5"
         tools:layout="@layout/fragment_vraag5" />
-    <fragment
-        android:id="@+id/instellingen"
-        android:name="com.jesse.kledingnator.instellingen"
-        android:label="fragment_instellingen"
-        tools:layout="@layout/fragment_instellingen" />
 </navigation>

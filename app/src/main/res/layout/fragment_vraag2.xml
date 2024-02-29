@@ -32,7 +32,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/btn_Vraag2_man"
+        android:id="@+id/btn_voorkant"
         android:layout_width="193dp"
         android:layout_height="53dp"
         android:backgroundTint="#6DC0E5"
@@ -46,7 +46,7 @@
         app:layout_constraintVertical_bias="0.405" />
 
     <Button
-        android:id="@+id/btn_Vraag2_vrouw"
+        android:id="@+id/btn_achterkant"
         android:layout_width="193dp"
         android:layout_height="53dp"
         android:backgroundTint="#6DC0E5"
@@ -62,7 +62,7 @@
         android:id="@+id/text_IsHetKoud3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="wat is je geslacht?"
+        android:text="wat is uw geslacht?"
         android:textColor="#000000"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -72,7 +72,7 @@
         app:layout_constraintVertical_bias="0.264" />
 
     <Button
-        android:id="@+id/btn_Vraag2_geen"
+        android:id="@+id/btn_geenprint"
         android:layout_width="193dp"
         android:layout_height="53dp"
         android:backgroundTint="#6DC0E5"
