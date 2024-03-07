@@ -40,7 +40,7 @@ class Vraag1 : Fragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_vraag1, container, false)
 
-        var kledingstuk_ant = arguments?.getString("kledingstuk_ant")
+        val kledingstuk_ant = arguments?.getString("kledingstuk_ant")
 
         view.findViewById<TextView>(R.id.txt_vraag1_test).text = kledingstuk_ant
 
