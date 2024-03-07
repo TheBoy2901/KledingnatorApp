@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_startScherm_to_keuzeKledingstuk"
             app:destination="@id/keuzeKledingstuk" />
+        <action
+            android:id="@+id/action_startScherm_to_instellingen"
+            app:destination="@id/instellingen" />
     </fragment>
     <fragment
         android:id="@+id/keuzeKledingstuk"
@@ -36,5 +39,37 @@
         android:id="@+id/Vraag2"
         android:name="com.jesse.kledingnator.Vraag2"
         android:label="fragment_vraag2"
-        tools:layout="@layout/fragment_vraag2" />
+        tools:layout="@layout/fragment_vraag2" >
+        <action
+            android:id="@+id/action_Vraag2_to_vraag3"
+            app:destination="@id/vraag3" />
+    </fragment>
+    <fragment
+        android:id="@+id/vraag3"
+        android:name="com.jesse.kledingnator.Vraag3"
+        android:label="fragment_vraag3"
+        tools:layout="@layout/fragment_vraag3" >
+        <action
+            android:id="@+id/action_vraag3_to_vraag4"
+            app:destination="@id/vraag4" />
+    </fragment>
+    <fragment
+        android:id="@+id/instellingen"
+        android:name="com.jesse.kledingnator.instellingen"
+        android:label="fragment_instellingen"
+        tools:layout="@layout/fragment_instellingen" />
+    <fragment
+        android:id="@+id/vraag4"
+        android:name="com.jesse.kledingnator.Vraag4"
+        android:label="fragment_vraag4"
+        tools:layout="@layout/fragment_vraag4" >
+        <action
+            android:id="@+id/action_vraag4_to_vraag5"
+            app:destination="@id/vraag5" />
+    </fragment>
+    <fragment
+        android:id="@+id/vraag5"
+        android:name="com.jesse.kledingnator.Vraag5"
+        android:label="fragment_vraag5"
+        tools:layout="@layout/fragment_vraag5" />
 </navigation>

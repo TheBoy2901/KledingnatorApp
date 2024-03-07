@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import androidx.core.os.bundleOf
 import androidx.navigation.Navigation
 
 // TODO: Rename parameter arguments, choose names that match
@@ -40,21 +39,18 @@ class KeuzeKledingstuk : Fragment() {
         val view = inflater.inflate(R.layout.fragment_keuze_kledingstuk, container, false)
 
         view.findViewById<Button>(R.id.btn_keuze_broek).setOnClickListener {
-            val kledingstuk = "Broek"
-            val antwoordKledingstuk = bundleOf("antwoord" to kledingstuk)
-            Navigation.findNavController(view).navigate(R.id.action_keuzeKledingstuk_to_vraag1, antwoordKledingstuk)
+            val kledingstuk = ¨Broek¨
+            Navigation.findNavController(view).navigate(R.id.action_keuzeKledingstuk_to_vraag1, kledingstuk)
         }
 
         view.findViewById<Button>(R.id.btn_keuze_sokken).setOnClickListener {
-            val kledingstuk = "Sokken"
-            val antwoordKledingstuk = bundleOf("antwoord" to kledingstuk)
-            Navigation.findNavController(view).navigate(R.id.action_keuzeKledingstuk_to_vraag1, antwoordKledingstuk)
+            val kledingstuk = ¨Sokken¨
+            Navigation.findNavController(view).navigate(R.id.action_keuzeKledingstuk_to_vraag1, kledingstuk)
         }
 
         view.findViewById<Button>(R.id.btn_keuze_vest).setOnClickListener {
-            val kledingstuk = "Vest"
-            val antwoordKledingstuk = bundleOf("antwoord" to kledingstuk)
-            Navigation.findNavController(view).navigate(R.id.action_keuzeKledingstuk_to_vraag1, antwoordKledingstuk)
+            val kledingstuk = ¨Vest¨
+            Navigation.findNavController(view).navigate(R.id.action_keuzeKledingstuk_to_vraag1, kledingstuk)
         }
         return view
     }

@@ -15,10 +15,10 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [StartScherm.newInstance] factory method to
+ * Use the [Vraag4.newInstance] factory method to
  * create an instance of this fragment.
  */
-class StartScherm : Fragment() {
+class Vraag4 : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -36,14 +36,20 @@ class StartScherm : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val view = inflater.inflate(R.layout.fragment_start_scherm, container, false)
+        return inflater.inflate(R.layout.fragment_vraag4, container, false)
 
-        view.findViewById<Button>(R.id.btn_start).setOnClickListener {
-            Navigation.findNavController(view).navigate(R.id.action_startScherm_to_keuzeKledingstuk)
+        view.findViewById<Button>(R.id.btn_voorkant).setOnClickListener {
+            Navigation.findNavController(view).navigate(R.id.action_vraag4_to_vraag5)
         }
-        view.findViewById<Button>(R.id.btn_instellingen).setOnClickListener {
-            Navigation.findNavController(view).navigate(R.id.action_startScherm_to_instellingen)
+
+        view.findViewById<Button>(R.id.btn_achterkant).setOnClickListener {
+            Navigation.findNavController(view).navigate(R.id.action_vraag4_to_vraag5)
         }
+
+        view.findViewById<Button>(R.id.btn_geenprint).setOnClickListener {
+            Navigation.findNavController(view).navigate(R.id.action_vraag4_to_vraag5)
+        }
+
         return view
     }
 }
