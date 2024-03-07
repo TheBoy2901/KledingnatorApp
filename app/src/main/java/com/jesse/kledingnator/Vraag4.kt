@@ -38,17 +38,17 @@ class Vraag4 : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_vraag4, container, false)
 
-        view.findViewById<Button>(R.id.btn_voorkant).setOnClickListener {
-            Navigation.findNavController(view).navigate(R.id.action_vraag4_to_vraag5)
-        }
+            view.findViewById<Button>(R.id.btn_voorkant).setOnClickListener {
+               Navigation.findNavController(view).navigate(R.id.action_vraag4_to_vraag5)
+             }
 
-        view.findViewById<Button>(R.id.btn_achterkant).setOnClickListener {
-            Navigation.findNavController(view).navigate(R.id.action_vraag4_to_vraag5)
-        }
+             view.findViewById<Button>(R.id.btn_achterkant).setOnClickListener {
+                 Navigation.findNavController(view).navigate(R.id.action_vraag4_to_vraag5)
+            }
 
-        view.findViewById<Button>(R.id.btn_geenprint).setOnClickListener {
-            Navigation.findNavController(view).navigate(R.id.action_vraag4_to_vraag5)
-        }
+            view.findViewById<Button>(R.id.btn_geenprint).setOnClickListener {
+                Navigation.findNavController(view).navigate(R.id.action_vraag4_to_vraag5)
+            }
 
         return view
     }
