@@ -78,7 +78,7 @@
     </fragment>
     <fragment
         android:id="@+id/eindscherm"
-        android:name="com.jesse.kledingnator.Eindscherm"
+        android:name="com.jesse.kledingnator.eindscherm"
         android:label="fragment_eindscherm"
         tools:layout="@layout/fragment_eindscherm" >
         <action

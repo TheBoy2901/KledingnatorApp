@@ -48,7 +48,7 @@ class KeuzeKledingstuk : Fragment() {
             Navigation.findNavController(view).navigate(R.id.action_keuzeKledingstuk_to_vraag1, kledingstuk)
         }
 
-        view.findViewById<Button>(R.id.btn_keuze_vest).setOnClickListener {
+        view.findViewById<Button>(R.id.home).setOnClickListener {
             val kledingstuk = ¨Vest¨
             Navigation.findNavController(view).navigate(R.id.action_keuzeKledingstuk_to_vraag1, kledingstuk)
         }
