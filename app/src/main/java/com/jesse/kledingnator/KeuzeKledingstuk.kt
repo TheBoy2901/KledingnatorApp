@@ -36,7 +36,7 @@ class KeuzeKledingstuk : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val view = inflater.inflate(R.layout.fragment_keuze_kledingstuk, container, false)
+        var view = inflater.inflate(R.layout.fragment_keuze_kledingstuk, container, false)
 
         view.findViewById<Button>(R.id.btn_keuze_broek).setOnClickListener {
             val kledingstuk = "Broek"
