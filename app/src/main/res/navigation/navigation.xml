@@ -71,5 +71,18 @@
         android:id="@+id/vraag5"
         android:name="com.jesse.kledingnator.Vraag5"
         android:label="fragment_vraag5"
-        tools:layout="@layout/fragment_vraag5" />
+        tools:layout="@layout/fragment_vraag5" >
+        <action
+            android:id="@+id/action_vraag5_to_eindscherm"
+            app:destination="@id/eindscherm" />
+    </fragment>
+    <fragment
+        android:id="@+id/eindscherm"
+        android:name="com.jesse.kledingnator.Eindscherm"
+        android:label="fragment_eindscherm"
+        tools:layout="@layout/fragment_eindscherm" >
+        <action
+            android:id="@+id/action_eindscherm_to_startScherm"
+            app:destination="@id/startScherm" />
+    </fragment>
 </navigation>
