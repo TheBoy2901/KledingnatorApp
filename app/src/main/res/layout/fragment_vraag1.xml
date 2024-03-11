@@ -32,7 +32,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
-        android:id="@+id/btn_donkere"
+        android:id="@+id/btn_Vraag1_ja"
         android:layout_width="193dp"
         android:layout_height="53dp"
         android:backgroundTint="#6DC0E5"
@@ -46,7 +46,7 @@
         app:layout_constraintVertical_bias="0.405" />
 
     <Button
-        android:id="@+id/btn_lichte"
+        android:id="@+id/btn_Vraag1_WeetIkNiet"
         android:layout_width="193dp"
         android:layout_height="53dp"
         android:backgroundTint="#6DC0E5"
@@ -84,17 +84,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.601" />
-
-    <TextView
-        android:id="@+id/txt_vraag1_test"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.265" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -38,7 +38,7 @@ class Vraag4 : Fragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_vraag4, container, false)
 
-        view.findViewById<Button>(R.id.btn_voorkant).setOnClickListener {
+        view.findViewById<Button>(R.id.btn_home).setOnClickListener {
             Navigation.findNavController(view).navigate(R.id.action_vraag4_to_vraag5)
         }
 
