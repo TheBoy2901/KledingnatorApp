@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import androidx.core.os.bundleOf
 import androidx.navigation.Navigation
 
 // TODO: Rename parameter arguments, choose names that match
@@ -31,16 +32,21 @@ override fun onCreateView(
     // Inflate the layout for this fragment
     val view = inflater.inflate(R.layout.fragment_vraag2, container, false)
 
+    val ant_kledingstuk = arguments?.getString("ant_kledingstuk")
+
     view.findViewById<Button>(R.id.btn_home).setOnClickListener {
-        Navigation.findNavController(view).navigate(R.id.action_Vraag2_to_vraag3)
+        val ant_vragen = bundleOf("ant_kledingstuk" to ant_kledingstuk)
+        Navigation.findNavController(view).navigate(R.id.action_Vraag2_to_vraag3, ant_vragen)
     }
 
     view.findViewById<Button>(R.id.btn_achterkant).setOnClickListener {
-        Navigation.findNavController(view).navigate(R.id.action_Vraag2_to_vraag3)
+        val ant_vragen = bundleOf("ant_kledingstuk" to ant_kledingstuk)
+        Navigation.findNavController(view).navigate(R.id.action_Vraag2_to_vraag3, ant_vragen)
     }
 
     view.findViewById<Button>(R.id.btn_geenprint).setOnClickListener {
-        Navigation.findNavController(view).navigate(R.id.action_Vraag2_to_vraag3)
+        val ant_vragen = bundleOf("ant_kledingstuk" to ant_kledingstuk)
+        Navigation.findNavController(view).navigate(R.id.action_Vraag2_to_vraag3, ant_vragen)
     }
     return view
 }

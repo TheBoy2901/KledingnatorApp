@@ -34,7 +34,7 @@
         app:layout_constraintVertical_bias="0.264" />
 
     <Button
-        android:id="@+id/btn_geenprint3"
+        android:id="@+id/btn_skinny"
         android:layout_width="193dp"
         android:layout_height="53dp"
         android:backgroundTint="#6DC0E5"
@@ -48,7 +48,7 @@
         app:layout_constraintVertical_bias="0.601" />
 
     <Button
-        android:id="@+id/btn_achterkant3"
+        android:id="@+id/btn_SlimFit"
         android:layout_width="193dp"
         android:layout_height="53dp"
         android:backgroundTint="#6DC0E5"
@@ -73,7 +73,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
-        android:id="@+id/btn_voorkant3"
+        android:id="@+id/btn_Baggy"
         android:layout_width="193dp"
         android:layout_height="53dp"
         android:backgroundTint="#6DC0E5"

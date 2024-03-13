@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.TextView
 import androidx.navigation.Navigation
 
 // TODO: Rename parameter arguments, choose names that match
@@ -38,9 +39,24 @@ override fun onCreateView(
     // Inflate the layout for this fragment
     val view = inflater.inflate(R.layout.fragment_eindscherm, container, false)
 
+    val ant_kledingstuk = arguments?.getString("ant_kledingstuk")
+
+    if (ant_kledingstuk.contentEquals("Vest")) {
+        view.findViewById<TextView>(R.id.txt_test).text = "Een mooi vest"
+    }
+
+    if (ant_kledingstuk.contentEquals("Broek")) {
+        view.findViewById<TextView>(R.id.txt_test).text = "Een mooie broek"
+    }
+
+    if (ant_kledingstuk.contentEquals("Sokken")) {
+        view.findViewById<TextView>(R.id.txt_test).text = "Mooie sokken"
+    }
+
     view.findViewById<Button>(R.id.btn_home).setOnClickListener {
         Navigation.findNavController(view).navigate(R.id.action_eindscherm_to_startScherm,)
     }
+
     return view
 }
 }

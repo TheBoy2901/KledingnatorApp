@@ -6,6 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import androidx.core.os.bundleOf
+import androidx.navigation.Navigation
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -36,6 +38,24 @@ class Vraag5 : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_vraag5, container, false)
-        view.findViewById<Button>()
+
+        val ant_kledingstuk = arguments?.getString("ant_kledingstuk")
+
+        view.findViewById<Button>(R.id.btn_Baggy).setOnClickListener{
+            val ant_vragen = bundleOf("ant_kledingstuk" to ant_kledingstuk)
+            Navigation.findNavController(view).navigate(R.id.action_vraag5_to_eindscherm, ant_vragen)
+        }
+
+        view.findViewById<Button>(R.id.btn_SlimFit).setOnClickListener{
+            val ant_vragen = bundleOf("ant_kledingstuk" to ant_kledingstuk)
+            Navigation.findNavController(view).navigate(R.id.action_vraag5_to_eindscherm, ant_vragen)
+        }
+
+        view.findViewById<Button>(R.id.btn_skinny).setOnClickListener{
+            val ant_vragen = bundleOf("ant_kledingstuk" to ant_kledingstuk)
+            Navigation.findNavController(view).navigate(R.id.action_vraag5_to_eindscherm, ant_vragen)
+        }
+
+        return view
     }
 }
